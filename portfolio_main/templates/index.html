@@ -1,0 +1,580 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block content %}
+
+<body class="overflow-x-hidden">
+
+  <header id="header"
+    class="max-w-full max-h-[120px] h-[80px] bg-[#EFF7F9] flex grid-cols-2 px-10 py-2 justify-between lg:gap-6 sm:gap-4 items-center">
+    <div class="basis-[15%] xs:basis-[35%] sm:basis-[20%] md:basis-[11%] ">
+      <a href="index.html"><img src="{% static "assets/images/divine tech logo.png" %}" alt="Logo"></a>
+    </div>
+    <div class=" md:basis-[70%] lg:basis-[60%]   font-semibold text-xl ">
+      <nav class="cursor-pointer">
+        <ul class="xs:hidden sm:hidden md:flex flex justify-evenly items-center py-4">
+          <li class=""><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars float-right fa-2xl xs:text-4xl  md:hidden"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- <span id="responsive_navbar" class="absolute right-0 z-20 bg-slate-800 bg-opacity-80 w-[50%] sm:w-[40%] px-4 py-2 h-[550px] transition-transform duration-300"> -->
+  <span id="responsive_navbar"
+    class="absolute  right-0 z-20 bg-slate-800 hidden bg-opacity-80 w-[50%] sm:w-[40%] px-4 py-2 h-[550px] transform translate-x-full transition-transform duration-300">
+    <nav class="cursor-pointer">
+      <ul class="hidden xs:flex sm:flex flex flex-col justify-evenly items-center py-4 text-xl">
+        <li class="py-2 bg-sky-500 px-4 text-center text-white rounded-md mb-3 w-[100%] hover:border-b border-gray-300">
+          <a href="" class="">Home</a>
+        </li>
+        <li class="py-2 bg-sky-500 px-4 text-center text-white rounded-md mb-3 w-[100%] hover:border-b border-gray-300">
+          <a href="">About</a>
+        </li>
+        <li class="py-2 bg-sky-500 px-4 text-center text-white rounded-md mb-3 w-[100%] hover:border-b border-gray-300">
+          <a href="">Services</a>
+        </li>
+        <li class="py-2 bg-sky-500 px-4 text-center text-white rounded-md mb-3 w-[100%] hover:border-b border-gray-300">
+          <a href="">Products</a>
+        </li>
+        <li class="py-2 bg-sky-500 px-4 text-center text-white rounded-md mb-3 w-[100%] hover:border-b border-gray-300">
+          <a href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </span>
+
+
+  <span class="bg-white text-white fixed top-[270px] left-0 z-50 px-1  py-2 border rounded-r-md">
+    <a href="https://www.linkedin.com/in/divyaprakash001/" target="_blank"
+      class="block my-2 cursor-pointer transform transition-transform duration-300 hover:scale-125"><i
+        class="fa-brands fa-square-facebook fa-xl " style="color: #1693f3;"></i></a>
+    <a href="https://www.linkedin.com/in/divyaprakash001/" target="_blank"
+      class="block my-2 transform transition-transform duration-300 hover:scale-125 cursor-pointer"><i
+        class="fa-brands fa-instagram fa-xl" style="color: #c8466d;"></i></a>
+    <a href="https://www.linkedin.com/in/divyaprakash001/" target="_blank"
+      class="block my-2 transform transition-transform duration-300 hover:scale-125 cursor-pointer"><i
+        class="fa-brands fa-linkedin fa-xl" style="color: #2a65cb;"></i></i></div>
+      <a href="https://www.linkedin.com/in/divyaprakash001/" target="_blank"
+        class="block my-2 transform transition-transform duration-300 hover:scale-125 cursor-pointer"><i
+          class="fa-brands fa-youtube fa-lg" style="color: #ce121b;"></i></a>
+  </span>
+
+
+
+
+
+
+
+
+  <section class="max-w-full bg-[url('{% static "assets/images/bg.jpg" %}')] object-cover bg-center bg-cover relative">
+    <div class="w-[100%] backdrop-blur-none h-[100%] absolute left-0 top-0  z-0"></div>
+    <div class="flex justify-center items-center mx-auto h-[550px] xs:h-[500px] max-h-[600px]">
+      <div class="md:basis-[50%] sm:basis-[80%] text-white text-center z-10 xs:px-5">
+        <h1 class="text-6xl md:text-5xl sm:text-3xl xs:text-2xl  font-bold mb-5">Vast Websites, Stunning Designs,
+          and
+          Seamless Experiences</h1>
+        <p class="text-xl xs:text-base mb-10">Transforming Ideas into Engaging Digital Experiences</p>
+        <a href="tel: +91 7461918110"
+          class="bg-sky-500 rounded text-xl px-14 py-4 xs:px-8 xs:text-lg hover:bg-sky-800 cursor-pointer duration-300">Start
+          Projects <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="max-w-full relative bg-gradient-to-b from-[#E6FDFD] to-[#FDEEF3] pt-10 z-40">
+    <div class="max-w-[1320px]  mx-auto   px-4 md:py-[30px] gap-6 flex lg:flex-row md:flex-col sm:flex-col xs:flex-col">
+
+      <div class=" basis-[50%] px-5">
+        <h3 class="text-3xl font-medium mb-3 xs:text-lg"><span class="text-red-400">Divine Technologies</span> : A
+          Complete Solution
+        </h3>
+        <p class="py-2 xs:text-sm text-justify">As a leading website development agency, we offer solutions that empower
+          businesses
+          on a global
+          scale and help you achieve your goals. Our dedicated team of web developers brings extensive experience across
+          various industries, including real estate, fashion, hospitality, education, e-commerce, automotive, and
+          finance.
+          We have successfully completed over 1,200 projects for more than 700 clients worldwide, specializing in both
+          e-commerce and custom website development.
+
+          Our team collaborates efficiently with clients from the India, USA and beyond.
+          Additionally, we excel as a mobile app development agency, creating fully responsive and functional
+          applications.</p>
+
+        <div class="grid grid-rows-4 grid-flow-col py-3 xs:text-xs">
+          <div class="py-2 xs:py-1">
+            <i class="fa-solid fa-arrow-right text-sky-500"></i>
+            <span>User-Friendly Interface</span>
+          </div>
+          <div class="py-2 xs:py-1">
+            <i class="fa-solid fa-arrow-right text-sky-500"></i>
+            <span>High Performance and Speed</span>
+          </div>
+          <div class="py-2 xs:py-1">
+            <i class="fa-solid fa-arrow-right text-sky-500"></i>
+            <span>SEO-Friendly Structure</span>
+          </div>
+          <div class="py-2 xs:py-1">
+            <i class="fa-solid fa-arrow-right text-sky-500"></i>
+            <span>Responsive Design</span>
+          </div>
+          <div class="py-2 xs:py-1">
+            <i class="fa-solid fa-arrow-right text-sky-500"></i>
+            <span>Secure and Reliable</span>
+          </div>
+          <div class="py-2 xs:py-1">
+            <i class="fa-solid fa-arrow-right text-sky-500"></i>
+            <span>Customizable Features</span>
+          </div>
+          <div class="py-2 xs:py-1">
+            <i class="fa-solid fa-arrow-right text-sky-500"></i>
+            <span>Analytics Integration</span>
+          </div>
+          <div class="py-2 xs:py-1">
+            <i class="fa-solid fa-arrow-right text-sky-500"></i>
+            <span>Scalable Architecture</span>
+          </div>
+        </div>
+
+        <div class="mt-4 mx-auto">
+          <a href="tel: +91 7461918110"
+            class="bg-sky-500 rounded text-white text-xl px-14 py-4 xs:px-8 xs:text-lg hover:bg-sky-800 cursor-pointer duration-300">Start
+            Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class=" basis-[50%]">
+        <div class="overflow-hidden rounded w-[90%]">
+          <img src="{% static "assets/images/agency.png" %}" alt="" class=" w-[full] animate-bounce">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="max-w-[full] bg-gradient-to-b from-[#FCEEF3] to-[#E7FCFD] pt-10">
+
+    <!-- heading -->
+    <div class="max-w-[1320px] mx-auto">
+      <h2 class="bg-gradient-custom bg-clip-text text-transparent text-4xl mt-4 text-center font-bold">Our Services
+      </h2>
+    </div>
+
+    <div
+      class="max-w-[1320px]  mx-auto grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-6 py-[50px] md:px-6 sm:px-6 xs:px-6">
+
+      <div
+        class="group bg-white rounded-md text-center shadow-md px-8 py-10 hover:bg-sky-600 duration-200 ease-in cursor-pointer  hover:text-white">
+        <i
+          class="fa-solid fa-laptop-code fa-2xl pb-[30px] group-hover:text-white text-sky-500  animate-bounce w-6 h-6"></i>
+        <h2 class="text-2xl font-bold pb-3">Web Development</h2>
+        <p class="xs:text-justify ">Our web development agency specializes in creating custom websites tailored to your
+          business needs.
+          With a focus on responsive design, seamless user experiences, and robust functionality, we deliver
+          high-quality solutions. Our expert team ensures optimized performance and ongoing support, empowering your
+          brand to thrive in the digital landscape. Partner with us today!</p>
+      </div>
+      <div
+        class="group bg-white rounded-md text-center shadow-md p-6 py-8 hover:bg-sky-600 duration-200 ease-in cursor-pointer  hover:text-white">
+        <i
+          class="fa-solid fa-mobile-screen fa-2xl pb-[30px] group-hover:text-white text-sky-500 animate-bounce w-6 h-6"></i>
+        <h2 class="text-xl font-bold pb-2">App Development</h2>
+        <p class="xs:text-justify">Our app development agency creates innovative, user-friendly applications for both
+          iOS and Android
+          platforms. We prioritize seamless functionality, stunning design, and robust performance. From concept to
+          launch, our expert team collaborates closely with clients to deliver tailored solutions that meet business
+          goals. Let us help you bring your app idea to life!</p>
+      </div>
+
+
+      <div
+        class="group bg-white rounded-md text-center shadow-md p-6 py-8 hover:bg-sky-600 duration-200 ease-in cursor-pointer  hover:text-white">
+        <i
+          class="fa-solid fa-building-columns fa-2xl pb-[30px] group-hover:text-white text-sky-500 animate-bounce w-6 h-6"></i>
+        <h2 class="text-xl font-bold pb-2">Software Training Institute</h2>
+        <p class="xs:text-justify">Our software training institute offers comprehensive courses designed to equip
+          individuals with
+          essential tech skills. With experienced instructors and hands-on training, we cover various topics, including
+          programming, web development, and data science. Our personalized approach ensures students gain practical
+          knowledge and confidence to excel in their careers. Join us to boost your expertise!</p>
+      </div>
+
+      <div
+        class="group bg-white rounded-md text-center shadow-md px-8 py-10 hover:bg-sky-600 duration-200 ease-in cursor-pointer hover:text-white">
+        <i class="fa-solid fa-bullhorn fa-2xl pb-[30px] group-hover:text-white text-sky-500 animate-bounce w-6 h-6"></i>
+        <h2 class="text-xl font-bold pb-2">Digital Marketing</h2>
+        <p class="xs:text-justify">Elevate your business with our digital marketing services, expertly crafted to unlock
+          your brand's true potential. We focus on driving engagement, enhancing growth, and maximizing visibility
+          across online platforms. With targeted strategies and data-driven insights, we empower your brand to connect
+          with your audience and achieve lasting success in the digital realm.</p>
+      </div>
+
+
+
+      <div
+        class="group bg-white rounded-md text-center shadow-md px-8 py-10 hover:bg-sky-600 duration-200 ease-in cursor-pointer  hover:text-white">
+        <i class="fa-solid fa-video fa-2xl pb-[30px] group-hover:text-white text-sky-500 animate-bounce w-6 h-6"></i>
+        <h2 class="text-xl font-bold pb-2">Video Editing</h2>
+        <p class="xs:text-justify">Transform your raw footage into captivating visual stories with our professional
+          video editing services. We enhance your videos with seamless transitions, striking graphics, and engaging
+          sound design, ensuring your content resonates with your audience. Whether for marketing, events, or personal
+          projects, we bring your vision to life, making every frame count.</p>
+      </div>
+
+      <div
+        class="group bg-white rounded-md text-center shadow-md px-8 py-10 hover:bg-sky-600 duration-200 ease-in cursor-pointer  hover:text-white">
+        <i
+          class="fa-solid fa-chart-pie fa-2xl pb-[30px] group-hover:text-white text-sky-500 animate-bounce w-6 h-6"></i>
+        <h2 class="text-xl font-bold pb-2">Website Maintainance</h2>
+        <p class="xs:text-justify">Ensure your website runs smoothly and stays relevant with our comprehensive website
+          maintenance services. We provide regular updates, security monitoring, and performance optimization to enhance
+          user experience and functionality. Let us handle the technical details, allowing you to focus on growing your
+          business while we keep your online presence secure and efficient.
+
+
+
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="max-w-[full]  bg-[url('{% static "assets/images/bg.jpg" %}')] object-cover bg-center bg-cover relative">
+    <div class="w-[100%] backdrop-blur-md h-[100%] absolute left-0 top-0  z-0"></div>
+    <div class="flex justify-center items-center mx-auto h-[600px] xs:h-[500px] max-h-[400px]">
+      <div class="md:basis-[60%] sm:basis-[80%] text-white text-center z-10 xs:px-5">
+        <h1 class="text-5xl md:text-5xl xs:text-2xl  font-bold mb-5">Let's Start A New <span
+            class="text-red-400">Project
+            Together</span></h1>
+        <p class="text-xl xs:text-base mb-10">Transforming Ideas into Engaging Digital Experiences</p>
+        <a href="tel: +91 7461918110"
+          class="bg-sky-500 rounded text-xl px-14 py-4 xs:px-8 xs:text-lg hover:bg-sky-800 cursor-pointer duration-300">Start
+          Projects <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="max-w-[full] bg-gradient-to-b from-[#FCEEF3] to-[#FBEEF3] pt-10">
+
+    <!-- heading -->
+    <div class="max-w-[1320px] mx-auto ">
+      <h2
+        class="bg-gradient-custom bg-clip-text text-transparent px-5 text-lg sm:text-2xl lg:text-3xl pt-4 pb-1 text-center font-bold">
+        OUR <span class="">PORTFOLIO</span></h2>
+      <p class="text-center px-6 text-sm sm:text-md  md:text-lg mx-auto mt-2 max-w-[800px] lg:w-[800px]">Showcasing our
+        expertise in designing and developing innovative websites, applications, and mobile apps to drive your digital
+        success.</p>
+    </div>
+
+    <div
+      class="max-w-[1320px]  mx-auto grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-6 py-[50px] md:px-6 sm:px-6 xs:px-6">
+
+      <div
+        class="group bg-white rounded-md text-center shadow-md px-8 py-10 hover:bg-sky-600 duration-200 ease-in cursor-pointer  hover:text-white">
+        <i
+          class="fa-solid fa-laptop-code fa-2xl pb-[30px] group-hover:text-white text-sky-500  animate-bounce w-6 h-6"></i>
+        <h2 class="text-2xl font-bold pb-3">Web Development</h2>
+        <p class="xs:text-justify ">Our web development agency specializes in creating custom websites tailored to your
+          business needs.
+          With a focus on responsive design, seamless user experiences, and robust functionality, we deliver
+          high-quality solutions. Our expert team ensures optimized performance and ongoing support, empowering your
+          brand to thrive in the digital landscape. Partner with us today!</p>
+      </div>
+      <div
+        class="group bg-white rounded-md text-center shadow-md p-6 py-8 hover:bg-sky-600 duration-200 ease-in cursor-pointer  hover:text-white">
+        <i
+          class="fa-solid fa-mobile-screen fa-2xl pb-[30px] group-hover:text-white text-sky-500 animate-bounce w-6 h-6"></i>
+        <h2 class="text-xl font-bold pb-2">App Development</h2>
+        <p class="xs:text-justify">Our app development agency creates innovative, user-friendly applications for both
+          iOS and Android
+          platforms. We prioritize seamless functionality, stunning design, and robust performance. From concept to
+          launch, our expert team collaborates closely with clients to deliver tailored solutions that meet business
+          goals. Let us help you bring your app idea to life!</p>
+      </div>
+
+
+      <div
+        class="group bg-white rounded-md text-center shadow-md p-6 py-8 hover:bg-sky-600 duration-200 ease-in cursor-pointer  hover:text-white">
+        <i
+          class="fa-solid fa-building-columns fa-2xl pb-[30px] group-hover:text-white text-sky-500 animate-bounce w-6 h-6"></i>
+        <h2 class="text-xl font-bold pb-2">Software Training Institute</h2>
+        <p class="xs:text-justify">Our software training institute offers comprehensive courses designed to equip
+          individuals with
+          essential tech skills. With experienced instructors and hands-on training, we cover various topics, including
+          programming, web development, and data science. Our personalized approach ensures students gain practical
+          knowledge and confidence to excel in their careers. Join us to boost your expertise!</p>
+      </div>
+
+      <div
+        class="group bg-white rounded-md text-center shadow-md px-8 py-10 hover:bg-sky-600 duration-200 ease-in cursor-pointer hover:text-white">
+        <i class="fa-solid fa-bullhorn fa-2xl pb-[30px] group-hover:text-white text-sky-500 animate-bounce w-6 h-6"></i>
+        <h2 class="text-xl font-bold pb-2">Digital Marketing</h2>
+        <p class="xs:text-justify">Elevate your business with our digital marketing services, expertly crafted to unlock
+          your brand's true potential. We focus on driving engagement, enhancing growth, and maximizing visibility
+          across online platforms. With targeted strategies and data-driven insights, we empower your brand to connect
+          with your audience and achieve lasting success in the digital realm.</p>
+      </div>
+
+
+
+      <div
+        class="group bg-white rounded-md text-center shadow-md px-8 py-10 hover:bg-sky-600 duration-200 ease-in cursor-pointer  hover:text-white">
+        <i class="fa-solid fa-video fa-2xl pb-[30px] group-hover:text-white text-sky-500 animate-bounce w-6 h-6"></i>
+        <h2 class="text-xl font-bold pb-2">Video Editing</h2>
+        <p class="xs:text-justify">Transform your raw footage into captivating visual stories with our professional
+          video editing services. We enhance your videos with seamless transitions, striking graphics, and engaging
+          sound design, ensuring your content resonates with your audience. Whether for marketing, events, or personal
+          projects, we bring your vision to life, making every frame count.</p>
+      </div>
+
+      <div
+        class="group bg-white rounded-md text-center shadow-md px-8 py-10 hover:bg-sky-600 duration-200 ease-in cursor-pointer  hover:text-white">
+        <i
+          class="fa-solid fa-chart-pie fa-2xl pb-[30px] group-hover:text-white text-sky-500 animate-bounce w-6 h-6"></i>
+        <h2 class="text-xl font-bold pb-2">Website Maintainance</h2>
+        <p class="xs:text-justify">Ensure your website runs smoothly and stays relevant with our comprehensive website
+          maintenance services. We provide regular updates, security monitoring, and performance optimization to enhance
+          user experience and functionality. Let us handle the technical details, allowing you to focus on growing your
+          business while we keep your online presence secure and efficient.
+
+
+
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-gradient-to-b from-[#FCEEF3] to-[#E6FDFD]  pt-8 pb-14">
+    <div class="max-w-[1320px] mx-auto ">
+      <h2
+        class="bg-gradient-custom bg-clip-text text-transparent px-5 text-lg sm:text-2xl lg:text-3xl pt-4 pb-1 text-center font-bold">
+        OUR <span class="">TOOLS &
+          TECHNOLOGIES
+          STACK</span></h2>
+      <p class="text-center px-6 text-sm sm:text-md  md:text-lg mx-auto mt-2 max-w-[800px] lg:w-[800px]">We
+        design &
+        develop every
+        websites,
+        application or
+        mobile apps
+        through
+        Innovative
+        Tools and Cutting-Edge Technologies for Your
+        Digital Success.</p>
+    </div>
+    <div class="max-w-[1320px] mx-auto px-5 mt-10 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6 gap-5">
+      <div class="bg-white box-border shadow-md flex justify-center items-center rounded-md p-10">
+        <img src="{% static "assets/images/python.png" %}" alt="" class="animate-bounce">
+      </div>
+      <div class="bg-white shadow-md flex justify-center items-center rounded-md p-10">
+        <img src="{% static "assets/images/django.png" %}" alt="" class="animate-bounce">
+      </div>
+      <div class="bg-white shadow-md flex justify-center items-center rounded-md p-10">
+        <img src="{% static "assets/images/nodejs.png" %}" alt="" class="animate-bounce">
+      </div>
+      <div class="bg-white shadow-md flex justify-center items-center rounded-md p-10">
+        <img src="{% static "assets/images/mysql.png" %}" alt="" class="animate-bounce">
+      </div>
+      <div class="bg-white shadow-md flex justify-center items-center rounded-md p-10">
+        <img src="{% static "assets/images/postgre.png" %}" alt="" class="animate-bounce">
+      </div>
+
+      <div class="bg-white shadow-md flex justify-center items-center rounded-md p-10">
+        <img src="{% static "assets/images/html.png" %}" alt="" class="animate-bounce">
+      </div>
+      <div class="bg-white shadow-md flex justify-center items-center rounded-md p-10">
+        <img src="{% static "assets/images/css-3.png" %}" alt="" class="animate-bounce">
+      </div>
+
+      <div class="bg-white shadow-md flex justify-center items-center rounded-md p-10">
+        <img src="{% static "assets/images/tailwind1.png" %}" alt="" class="animate-bounce">
+      </div>
+
+      <div class="bg-white shadow-md flex justify-center items-center rounded-md p-10">
+        <img src="{% static "assets/images/bootstrap.png" %}" alt="" class="animate-bounce">
+      </div>
+
+      <div class="bg-white shadow-md flex justify-center items-center rounded-md p-10">
+        <img src="{% static "assets/images/js.png" %}" alt="" class="animate-bounce">
+      </div>
+
+
+      <div class="bg-white shadow-md flex justify-center items-center rounded-md p-10">
+        <img src="{% static "assets/images/reactjs.png" %}" alt="" class="animate-bounce">
+      </div>
+
+      <div class="bg-white shadow-md flex justify-center items-center rounded-md p-10">
+        <img src="{% static "assets/images/figma.png" %}" alt="" class="animate-bounce">
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <footer class="w-[full] bg-footer h-auto pt-10 pb-10">
+    <div class="max-w-[1320px] px-6 pb-8 md:px-0 flex flex-col md:flex-row justify-between gap-6 mx-auto">
+      <div class="basis-[70%]">
+        <h2 class="text-md font-bold text-center md:text-3xl md:text-left text-white">INTEREST IN WORKING WITH OUR TEAM
+          ?</h2>
+        <p class="text-sm w-[70%] md:text-lg md:text-left mx-auto md:mx-0 mt-2 text-white text-center">LET'S DISCUSS
+          YOUR IDEA
+          AND GET
+          STARTED</p>
+
+        <div class="ml-6 mt-6 flex flex-col gap-4 ">
+          <div class="flex gap-4">
+            <div class="p-3 rounded-md bg-sky-500"><i class="fa-solid fa-phone fa-lg text-white"></i></div>
+            <div class="text-white">
+              <h3>Our Contact Number</h3>
+              <a href="tel: +91 7461918110">+91 7461918110</a>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="p-3 rounded-md bg-sky-500"><i class="fa-solid fa-envelope fa-lg text-white"></i></div>
+            <div class="text-white">
+              <h3>Mail To Our Support</h3>
+              <a href="mailto: divyaprakashara09@gmail.com">divyaprakashara09@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-4 md:flex-row px-4 md:px-0 mt-6">
+          <div class="basis-[50%] bg-white px-6 py-4 rounded-md shadow-md">
+            <h2 class="text-sky-500 text-lg  md:text-xl font-bold">Breif About Our Company</h2>
+            <p class="mt-2 text-sm text-justify md:text-left md:text-md"><span class="font-bold">Divine Technologies :
+              </span> Divine Technologies
+              is a
+              leading web
+              development agency specializing in innovative solutions. We combine creativity and technical expertise to
+              deliver stunning websites and applications that drive results and enhance user experiences.</p>
+          </div>
+          <div class="basis-[50%] bg-white px-6 py-4 rounded-md shadow-md">
+            <h3 class="text-sky-500 text-lg  md:text-xl font-bold">What We Promise To You</h3>
+            <ul class="list-disc pl-6 mt-2">
+              <li class="font-medium text-sm md:text-md">On-time delivery</li>
+              <li class="font-medium text-sm md:text-md">Most affordable quote</li>
+              <li class="font-medium text-sm md:text-md">Project consulting by experts</li>
+              <li class="font-medium text-sm md:text-md">Excellent customer support</li>
+              <li class="font-medium text-sm md:text-md">Complete transparency</li>
+              <li class="font-medium text-sm md:text-md">Best services guaranteed</li>
+            </ul>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="basis-[35%] px-4 md:px-0">
+        <div class="bg-white px-6 overflow-hidden pt-5 pb-6 rounded-md shadow-md">
+          <h2 class="text-2xl text-sky-500 font-bold">Enquiry Now</h2>
+          <form action="">
+            <div class="mt-3">
+              <label class="block text-sm" for="full_name">Full Name <span class="text-red-600">*</span></label>
+              <input type="text" id="full_name" class="border border-gray-300 w-full h-8">
+            </div>
+            <div class="mt-3">
+              <label class="block text-sm" for="full_name">Mobile Number <span class="text-red-600">*</span></label>
+              <input type="text" id="full_name" class="border border-gray-300 w-full h-8">
+            </div>
+            <div class="mt-3">
+              <label class="block text-sm" for="full_name">Email Address <span class="text-red-600">*</span></label>
+              <input type="text" id="full_name" class="border border-gray-300 w-full h-8">
+            </div>
+            <div class="mt-3">
+              <label class="block text-sm" for="full_name">Requirement? <span class="text-red-600">*</span></label>
+              <input type="text" id="full_name" class="border border-gray-300 w-full h-8">
+            </div>
+            <div class="mt-3">
+              <label class="block text-sm" for="full_name">Brief About Your Project <span
+                  class="text-red-600">*</span></label>
+              <input type="text" id="full_name" class="border border-gray-300 w-full h-8">
+            </div>
+            <div class="mt-3">
+              <input type="button" id="button" value="Submit"
+                class="border border-gray-300 px-5 text-lg py-1 text-white font-medium rounded-md bg-sky-500">
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="max-w-[1320px] flex flex-col md:flex-row justify-between items-center mx-auto px-6 md:p-0 py-6">
+      <p class="text-center md:text-left mt-1 text-white">All rights reserved to <a class="underline" href="index.html">
+          Divine
+          Technologies </a> &
+        &copy; 2024 Divine Technologies</p>
+      <div class="basis-[40%]">
+        <ul class="flex  justify-end items-center py-4 text-white">
+          <li class="me-3 transtion-all duration-300 hover:transition-transform hover:scale-110"><a href="">Home</a>
+          </li>
+          <li class="me-3 transtion-all duration-300 hover:transition-transform hover:scale-110"><a href="">Services</a>
+          </li>
+          <li class="me-3 transtion-all duration-300 hover:transition-transform hover:scale-110"><a href="">Products</a>
+          </li>
+          <li class="me-3 transtion-all duration-300 hover:transition-transform hover:scale-110"><a href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+
+  <div id="scrollToTop" title="Go To Top"
+    class="cursor-pointer bg-sky-500 flex justify-center items-center p-4 rounded-md md:p-6 text-white w-[40px] h-[40px] fixed bottom-6 right-6 z-50 animate-bounce">
+    <i class="fa-solid fa-arrow-up fa-xl md:fa-2xl"></i>
+  </div>
+
+  <a href="https://wa.me/7461918110?text=Hello!%20I%20want%20to%20start%20project%20with%20you." title="Go To Top"
+    class="cursor-pointer bg-white rounded-md flex justify-center items-center  p-4 rounded-md md:p-6 text-white w-[40px] h-[40px] fixed bottom-6 left-6 z-50 animate-fade-scale">
+    <i class="fa-brands fa-whatsapp fa-2xl text-green-300"></i>
+  </a>
+
+  <script>
+    const navbar = document.querySelector('#responsive_navbar');
+    const toggleButton = document.querySelector('.fa-bars');
+
+    toggleButton.addEventListener('click', () => {
+      // Toggle the transform class for sliding effect
+      if (navbar.classList.contains('translate-x-full')) {
+        navbar.classList.remove('translate-x-full');
+        navbar.classList.remove('hidden');
+        navbar.classList.add('translate-x-0'); // Slide in
+      } else {
+        navbar.classList.remove('translate-x-0');
+        navbar.classList.add('translate-x-full'); // Slide out
+      }
+    });
+
+
+
+  </script>
+
+  <script>
+    document.getElementById('scrollToTop').addEventListener('click', function (event) {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+</body>
+{% endblock %}

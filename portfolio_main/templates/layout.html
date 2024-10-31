@@ -1,0 +1,58 @@
+{% load static tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  {% tailwind_css %}
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'sm': '567px',
+          'md': '768px',
+          'lg': '1024px',
+          'xl': '1280px',
+          '2xl': '1536px',
+        },
+        extend: {
+          animation: {
+            'slow-bounce': 'bounce 1s infinite',
+            'fade-scale': 'fadescale 2s infinite',
+          },
+          backgroundImage: {
+            'gradient-custom': 'linear-gradient(313deg, #ef4949, #dd4747, #0583d8, #0575c1)',
+          },
+          keyframes: {
+            bounce: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-0.25rem)' },
+            },
+            fadescale: {
+              '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+              '50%': { transform: 'scale(1.1)', opacity: '1' },
+            },
+          },
+          screens: {
+            'xs': { min: '320px', max: '566px' }
+          },
+          colors: {
+            footer: '#00235D',
+            pinkish: '#E62582',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
