@@ -172,3 +172,11 @@ cython_debug/
 #.idea/
 
 # End of https://www.toptal.com/developers/gitignore/api/django
+
+# tailwind ignore
+.log/
+node_modules/
+docs/
+css/
+export.scss
+export/
